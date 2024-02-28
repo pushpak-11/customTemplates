@@ -1,0 +1,8 @@
+cat targets.txt | nuclei -c 100 -silent -t /root/nuclei-templates/ | tee results.txt
+    sub domains                         nuclei tempate location in kali   save resulats 
+
+
+
+ nuclei -t /root/nuclei-wordfence-cve -u https://www.iaggbs.com/     
+
+cat airbnb.com | httpx -mc 200 | nuclei -t /root/40k-nuclei-templates/aditya/folder1 

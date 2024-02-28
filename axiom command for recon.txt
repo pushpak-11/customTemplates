@@ -1,0 +1,7 @@
+axiom command for recon
+
+axiom-fleet domain -i=12 -t=2
+axiom-scan "uber*" --rate=1000 -p443 --banners -iL=uberips.txt -o=massscanuber.txt
+cat massscanuber.txt | awk '{print $2}' | sort -u >>uberalive.txt
+axiom-scan"uber*" -iL=uberalive.txt -p443 -sV -sC -T4 -m=nmapx -o=output
+axiom-rm "uber*" -f

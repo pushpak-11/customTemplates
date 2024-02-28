@@ -1,0 +1,40 @@
+https://github.com/six2dez/reconftw
+https://github.com/EdOverflow/can-i-take-over-xyz
+Takeover - Subdomain Takeover Finder v0.2
+
+step 1 cd takeover
+2 commands
+
+
+$ python3 takeover.py -d www.domain.com -v 
+$ python3 takeover.py -d www.domain.com -v -t 30
+$ python3 takeover.py -d www.domain.com -p http://127.0.0.1:8080 -v 
+$ python3 takeover.py -d www.domain.com -o <output.txt> or <output.json> -v 
+$ python3 takeover.py -l uber-sub-domains.txt -o output.txt -p http://xxx.xxx.xxx.xxx:8080 -v 
+$ python3 takeover.py -d uber-sub-domains.txt -o output.txt -T 3 -v 
+
+
+python3 takeover.py -d making.lyst.com  -v
+
+
+
+
+go to github and 
+and creeate github repo with vulnrable domains name 
+then go to setting then branches create branch
+go to genrals and reamins the same name
+then select branch master
+then go to pages
+
+
+-w
+suback cammand subjack
+ ./subjack -w doamin.txt -v
+
+
+cd tools 
+cd tools/subzy
+./subzy run --targets list.txt
+subzy cammand
+
+./subzy

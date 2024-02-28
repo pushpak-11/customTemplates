@@ -1,0 +1,9 @@
+frist do nmap
+
+msfconsole
+search portscan / xss
+give number of scan
+example use 8
+
+options
+

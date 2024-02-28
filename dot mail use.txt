@@ -1,0 +1,2 @@
+use dot on email for recive multiple verifaction .
+example aaarav.patil@gmail.com

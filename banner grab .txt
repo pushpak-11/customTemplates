@@ -1,0 +1,5 @@
+banner grab 
+comand    IP          port
+nc -vn 198.61.165.107 22
+
+SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.10+esm4

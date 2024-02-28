@@ -1,0 +1,3 @@
+cat subdomains.txt | httpx ––silent >> alive.txt && cat alive.txt | katana ––silent >> endpoints.txt && cat endpoints.txt | nuclei -t <YOUR_TEMPLATES>
+
+https://infosecwriteups.com/cool-recon-techniques-every-hacker-misses-episode-3-3812e7da3425

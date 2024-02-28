@@ -1,0 +1,3 @@
+ ffuf -w /root/SecLists/Discovery/Web-Content/raft-small-directories.txt -u https://34.111.31.111/FUZZ
+
+ffuf -w /root/SecLists/Discovery/Web-Content/directory-list-2.3-big.txt -u https://34.111.31.111/FUZZ -mc 200

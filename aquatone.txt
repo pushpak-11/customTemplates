@@ -1,0 +1,11 @@
+cat transub.txt | httprobe -c 20 | aquatone -chrome-path /snap/bin/chromium
+
+
+you can find output of all files in the root 
+
+use to see screenshots\
+
+python3 -m http.server
+
+go to browser and add ip:port number
+http://139.59.86.119:8000/

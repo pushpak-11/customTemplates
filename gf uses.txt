@@ -1,0 +1,1 @@
+cat way.txt | gf xss | sed 's/=.*/=/' | sed 's/URL: //' | sort -u | tee xss-output.txt |

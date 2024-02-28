@@ -1,0 +1,52 @@
+inurl:responsible disclosure $50
+responsible disclosure europe
+responsible disclosure white hat
+white hat program
+responsible disclosure r=h:nl
+responsible disclosure r=h:uk
+responsible disclosure r=h:eu
+responsible disclosure bounty r=h:nl
+responsible disclosure bounty r=h:uk
+responsible disclosure bounty r=h:eu
+responsible disclosure swag r=h:nl
+responsible disclosure swag r=h:uk
+responsible disclosure swag r=h:eu
+responsible disclosure reward r=h:nl
+responsible disclosure reward r=h:uk
+responsible disclosure reward r=h:eu
+“powered by bugcrowd” -site:bugcrowd.com
+“submit vulnerability report”
+“submit vulnerability report” | “powered by bugcrowd” | “powered by hackerone”
+intext:”we take security very seriously”
+site:responsibledisclosure.com
+inurl:’vulnerability-disclosure-policy’ reward
+site:..nl intext: security report reward 
+
+ monetary bounties, it will be paid via paypal.
+
+Bounties can be paid via PayPal
+
+
+
+
+ we’re offering a bounty for security researchers who find and report directly to us any major vulnerability in our platform
+
+
+
+we award tokens of our appreciation for original
+
+
+Overseas vulnerability reporters can obtain rewards by providing PayPal accounts
+
+inurl : /responsible-disclosure/ reward At this time, we are only able to pay rewards via PayPal.
+
+
+Rewards will ONLY be made via PayPal.
+All bounties are paid out via PayPal.
+
+
+Rewards are done at our discretion depending on the criticality of the vulnerability reported.
+
+
+
+We may also decide to express our appreciation and/or offer public credit to the discloser

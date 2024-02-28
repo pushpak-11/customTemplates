@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to First Fiddle</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #333;
+      }
+      .navbar .logo {
+        float: left;
+        padding: 10px;
+      }
+      .fullscreen-bg {
+        background-image: url('./vlcsnap-2021-03-02-17h30m15s132.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+      }
+      .fullscreen-bg h1 {
+        text-align: center;
+        color: white;
+        margin-top: 200px;
+        font-size: 36px;
+      }
+      .header {
+        text-align: center;
+        color: black;
+        margin-top: 20px;
+      }
+      .header span {
+        color: orange;
+      }
+      .content-wrapper {
+        display: flex;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+        background-color: white;
+      }
+      .button {
+        background-color: orange;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      .image {
+        flex: 1;
+        text-align: center;
+      }
+      .image img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"><img src="your-logo.png" alt="Logo" /></div>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">BRAND</a>
+      <a href="#">OUR TEAM</a>
+      <a href="#">PRESS RELEASE</a>
+      <a href="#">CONTACT</a>
+      <a href="#">CAREERS</a>
+      <a href="#">FRANCHISE</a>
+    </div>
+
+    <div class="fullscreen-bg">
+      <h1>Welcome to First Fiddle</h1>
+    </div>
+
+    <div class="header">
+      <h1><span>Welcome to</span> First Fiddle</h1>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <p>
+          This is the content section. You can add your text and information
+          here.
+        </p>
+        <button class="button">Click Me</button>
+      </div>
+      <div class="image">
+        <img src="your-image.png" alt="Image" />
+      </div>
+    </div>
+  </body>
+</html>

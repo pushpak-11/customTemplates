@@ -1,0 +1,7 @@
+dalfox comammd
+
+dalfox url http://.....
+
+dalfox file (subdomains.file)
+
+cat wordlist | uniq | dalfox pipe

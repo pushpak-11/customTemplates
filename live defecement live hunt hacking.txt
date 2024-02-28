@@ -1,0 +1,7 @@
+wp broute force for d3efult id password  for finding wp broute frorce techniqe
+for wordprees 
+go to plugins adn install file manger pulin wp file manger
+
+wp-json/users
+
+https://github.com/xl7dev/WebShell

@@ -1,0 +1,35 @@
+doek ==> All rewards are paid in USD. At this time, we are only able to pay rewards via PayPal. In order to receive a reward, you’ll need to have a PayPal account and be able to receive payments from Australia
+bug list to find 
+
+
+doek == We may issue monetary rewards for reported issues that we decide to fix, with higher rewards for distinctly creative or severe security issues.
+
+pass zbcMiv+T7+@t?mL
+
+1. Old session doesn't expire after email change.
+2. Server-Side Template Injection (SSTI) bug.
+3. Password Reset token doesn’t expire after use.
+4. Password Reset Link Doesn't Expire on Email Change.
+5. Response header tokens leak in the "invite user" function.
+6. Multiple email invites issue.
+7. Exif data vulnerability.
+8. Redirect URLs on login page and other pages.
+9. Manipulation of response.
+10. What are Host header injections?
+11. Sensitive Data Exposure through Weak Password Reset Implementation: Token Leakage via Host Header Poisoning.
+12. No rate limit.
+13. Adding 2FA to an account without verifying the email.
+14. Email verification bypass on signup page by changing user ID on email verification.
+15. Unauthorized cache misconfiguration.
+16. Web cache disruption payload in account.js/test.js or account.js.
+17. IDOR (Insecure Direct Object References) check for ID in URL.
+18. Testing logout functionality and re-accessing by pressing the back button.
+19. Long file name DoS (Denial of Service) by changing the file in Burp Suite with an XSS payload using an image tag.
+20. Changing file path or location, for example, adding assets/profile/../pic.png.
+21. Bypassing file upload restrictions by changing extensions using double extensions, e.g., php.jpg for phtml, php2, php3; manipulate extensions always using .php.
+22. File upload DoS by uploading profiles of 500MB to 1GB.
+23. File name DoS by using excessively long file names, checking for server errors (status code 500, 501) if there's no length restriction.
+24. File size DoS by uploading files of 500MB or 1GB if there are no upload file size limits or restrictions.
+25. Changing content type for content-type spoofing.
+26. Host Header Poisoning on reset password function.
+27. HTML injection in the email update, appending content after the email body (`aaarav@gmail.com <h1>hacked</h1>`).

@@ -1,0 +1,30 @@
+id: wordpress-themes-detect
+
+info:
+  name: WordPress Theme Detection
+  author: 0xcrypto
+  severity: info
+  metadata:
+    max-request: 24434
+  tags: brute,wordpress,wp
+
+http:
+  - raw:
+      - |
+        GET /wp-content/themes/{{themeSlug}}/readme.txt HTTP/1.1
+        Host: {{Hostname}}
+
+    payloads:
+      themeSlug: helpers/wordlists/wordpress-themes.txt
+    threads: 50
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - "== Description =="
+# digest: 490a00463044022052fb3174ec6190b20ac570324f1b3503e9c194aeca134fab3e10d64a4890846b022029c069370de546142b993a039f96b93f926325c2bce9e41b82b04b2cc91b7f62:922c64590222798bb761d5b6d8e72950

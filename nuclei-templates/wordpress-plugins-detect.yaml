@@ -1,0 +1,38 @@
+id: wordpress-plugins-detect
+
+info:
+  name: WordPress Plugins Detection
+  author: 0xcrypto
+  severity: info
+  metadata:
+    max-request: 98135
+  tags: fuzzing,brute-force,wordpress
+
+http:
+  - raw:
+      - |
+        GET /wp-content/plugins/{{pluginSlug}}/readme.txt HTTP/1.1
+        Host: {{Hostname}}
+
+    threads: 50
+    payloads:
+      pluginSlug: helpers/wordlists/wordpress-plugins.txt
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        words:
+          - "== Description =="
+
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - "===\\s(.*)\\s===" # extract the plugin name
+          - "(?m)Stable tag: ([0-9.]+)" # extract the plugin version
+# digest: 4a0a0047304502210095d73a8c3aa4c7a16915f2dbd8f9b4ca781d1f0505c9f129beee5c24385af63102203f99149428d7a4df3158c96b70b588f69b7f9eb80f144bcf4dd443f7b6b7835d:922c64590222798bb761d5b6d8e72950

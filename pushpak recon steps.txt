@@ -1,0 +1,57 @@
+step 1 look for sub domains
+
+command 👇
+amass enum -brute -d (domain.com) -o (savefileBydomainName.txt)
+
+subfinder -d (domain) -all -cs | tee -a (file.txt)
+
+subfinder -d vine.co -all -cs | tee -a vine.txt
+command for cut flatu imformation👇
+
+cat file.txt | cut -d "," -f 1
+step 2 
+save clean domains to new file
+cat file.txt | cut -d "," -f 1 | tee -a domain.txt
+
+step 2 look for easy low haning site using google dorking
+
+site:domain filetype:jsp
+site:domain filetype:php
+site:domain inurl:jsp
+site:domain inurl:do
+site:domain inurl:do -www -support
+site:domain inurl:'&' -www -support
+
+site:domain inurl:'&' -www -support -register
+site:domain inurl:login -account -www -connect
+site:domain inurl:register -account -www -connect -register
+site:domain inurl:/users/ -account -www -connect -register
+
+site:domain inurl:/users -account -www -connect -register
+
+site:domain title:singup
+site:domain title:login
+site:domain title:admin
+
+
+step 3 go to sub domains check for hosts
+cat domains.txt | xargs -I{} host {} | tee -a host-out.txt
+cat host-out.txt
+grep -v "amazonaws.com" host-out.txt
+grep -v "amazonaws.com" host-out.txt | grep -v NXDOMAIN
+
+
+step 4 run httpx 
+coomand 👇
+
+cat domains.txt | httpx -title -wc -sc -cl -ct -web-server -asn -o httpx-out.txt -p 8000,8080,8443,80,8008,3000,5000,9090,900,7070,9200,15672,9000 -threads 75 -location
+
+
+ cat domain.txt | httpx -title -wc -sc -cl -ct -web-server -asn -o httpx-out.txt -p 8000,8080,8443,80,8008,3000,5000,9090,900,7070,9200,15672,9000 -threads 75 -location 
+
+
+go ipinfo and shodhan and check for asn code
+go to whoxy for resvere whois
+
+
+

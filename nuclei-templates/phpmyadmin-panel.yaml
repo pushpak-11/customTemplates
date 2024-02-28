@@ -1,0 +1,47 @@
+id: phpmyadmin-panel
+
+info:
+  name: phpMyAdmin Panel - Detect
+  author: pdteam,righettod
+  severity: info
+  description: phpMyAdmin panel was detected.
+  classification:
+    cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
+    cvss-score: 0
+    cwe-id: CWE-200
+  metadata:
+    max-request: 12
+    shodan-query: http.title:phpMyAdmin
+  tags: panel,phpmyadmin
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+      - "{{BaseURL}}/phpmyadmin/"
+      - "{{BaseURL}}/admin/phpmyadmin/"
+      - "{{BaseURL}}/_phpmyadmin/"
+      - "{{BaseURL}}/administrator/components/com_joommyadmin/phpmyadmin/"
+      - "{{BaseURL}}/apache-default/phpmyadmin/"
+      - "{{BaseURL}}/blog/phpmyadmin/"
+      - "{{BaseURL}}/forum/phpmyadmin/"
+      - "{{BaseURL}}/php/phpmyadmin/"
+      - "{{BaseURL}}/typo3/phpmyadmin/"
+      - "{{BaseURL}}/web/phpmyadmin/"
+      - "{{BaseURL}}/xampp/phpmyadmin/"
+      - "{{BaseURL}}/phpMyAdmin/"
+
+    stop-at-first-match: true
+    matchers:
+      - type: word
+        words:
+          - "<title>phpMyAdmin"
+          - "pmahomme"
+
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - 'v=([a-z0-9-._]+)'
+# digest: 4a0a0047304502207449d957b002879d0238de349ad0f9228864b615cb9f6d38f7179e0b82c173c7022100b05d354e315f1cdeadb32ca62967e67b0eab52e4a01ab42d614507cdd802f839:922c64590222798bb761d5b6d8e72950

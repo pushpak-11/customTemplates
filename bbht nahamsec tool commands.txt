@@ -1,0 +1,14 @@
+open tools flodert in root
+
+cd tools/sublister
+command 
+python ./sublist3r.py -d domin.com -o doman.txt
+
+
+cd tools/subzy
+command
+./subzy -targets doamin.txt
+
+for hide errors or faltu files 
+
+./subzy -targets doamin.txt -hide_fails

